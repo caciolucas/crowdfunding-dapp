@@ -244,7 +244,7 @@ export default {
       this.$toast.add({
         severity: "success",
         summary: "MetaMask conectado!",
-        detail: `${this.account}!`,
+        detail: this.account ? `${this.account}!` : "",
       });
       this.getProjetos();
     });
